@@ -17,7 +17,7 @@ angular.module('test_project',[
         'decimal': '',
         'emptyTable': 'Нет данных по таблице',
         'infoEmpty': 'Показывается от 0 до 0 из 0 записей',
-        'infoFiltered': '(Фильтрованно  из _MAX_ записей)',
+        'infoFiltered': '(Отфильтровано  из _MAX_ записей)',
         'infoPostFix': '',
         'thousands': ',',
         'lengthMenu': 'Показывать _MENU_ записей',

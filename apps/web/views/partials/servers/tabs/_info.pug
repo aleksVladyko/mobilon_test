@@ -18,7 +18,10 @@
                 td {{$ctrl.server.groupId}}
             tr
                 td status
-                td {{$ctrl.server.status === 'started'?'Запущен':'Остановлен'}}
+                td.btn-toolbar {{$ctrl.server.status === 'started'?'Запущен':'Остановлен'}}
+                    a.btn.btn-info.pull-right(
+                        ng-click='$ctrl.restart()'
+                    ) Рестарт
                     a.btn.btn-default.pull-right(
                         ng-if="$ctrl.server.status === 'started'"
                         ng-click='$ctrl.stop()'
@@ -29,3 +32,5 @@
                     ) Запустить
     .col-md-3
         a.btn.btn-default.pull-right(ui-sref="servers.edit({id:$ctrl.server._id})") Изменить
+    
+         

@@ -27,6 +27,7 @@ module.exports = {
         exclude: /node_modules/,
       },
     ],
+    
   },
   optimization: {
     runtimeChunk: 'single',
@@ -44,4 +45,5 @@ module.exports = {
     ignored: /node_modules/,
     poll: true,
   },
+  mode: 'development',
 };
